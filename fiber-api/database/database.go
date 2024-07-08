@@ -17,7 +17,7 @@ type DbInstance struct {
 var Database DbInstance
 
 func ConnectDb() {
-	dsn := "host=localhost user=postgres password=kaparouita321 dbname=postgres port=5432 sslmode=disable"
+	dsn := "host=localhost user=postgres password=password dbname=postgres port=5432 sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	//TODO: update mysql
 
